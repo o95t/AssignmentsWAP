@@ -1,0 +1,31 @@
+body {
+    background-image: url("silverware.jpg");
+}
+
+.title {
+    background-color: rgb(196, 194, 188);
+    color: rgb(240, 221, 113);
+    text-decoration-line: underline;
+}
+
+.header {
+    text-align: center;
+}
+
+ul {
+    list-style-type: decimal;
+}
+
+.userComments{
+    background-color: yellow;
+    margin: 10px;
+    font-family: cursive;
+}
+
+.links{
+    color: rgb(240, 221, 113);
+}
+
+footer{
+    text-align: right;
+}
