@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Sign Up</title>
+</head>
+
+<body>
+    <link rel="stylesheet" href="style.css">
+    <form>
+        <fieldset>
+            <legend><h2>Sign Up</h2></legend>
+            
+            <div class="form-group">
+                <label for="name">Name:
+                    <input class="input" type="text" id="name" name="name" required>
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label for="student">Gender:
+                    <span style="margin-left: 90px;">
+                        <input type="radio" id="Male" class="radio" name="Gender" value="Male"> Male
+                        <input type="radio" id="Female" class="radio" name="Gender" value="Female"> Female
+                    </span>
+                </label>
+
+            </div>
+            <div class="form-group">
+                <label for="age">Age:
+                    <input class="input" type="text" id="age" name="age" required>
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label for="type">Personality Type:
+
+                    <input class="input" type="text" id="type" name="type" style="width: 37% !important;
+                float: initial;
+                margin-left: 23px;">
+                    (<span style="color: red;">
+                        Don't Know your type</span> )
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label for="OS">Favorite OS:
+                    <select class="input" name="OS" id="OS" style="width: 74% !important;">
+                        <option value="1">Windows</option>
+                        <option value="2">Mac</option>
+                    </select><br><br>
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label for="seekingAge">Seeking Age:
+                    <input class="input" type="number" id="min" name="min" placeholder="min" required
+                        style="width: 30% !important; float: initial; margin-left: 49px;"> to
+                    <input class="input" type="number" id="max" name="max" placeholder="max" required
+                        style="width: 30% !important;float: initial;">
+                </label>
+            </div>
+
+            <button type="submit">Sign Up</button>
+    </form>
+
+    </fieldset>
+</body>
+
+</html>
