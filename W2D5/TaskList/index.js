@@ -27,7 +27,7 @@ function saveTaskToLocalDB(task) {
 
 function loadTasksFromLocalDB() {
     const tasks = localStorage.getItem('tasks');
-    if (tasks == "") return [];
+    if (tasks == null) return [];
 
     return tasks.split(',');
 
