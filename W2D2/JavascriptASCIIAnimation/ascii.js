@@ -19,6 +19,7 @@ $(document).ready(function () {
         stopAnimation();
         $("#stop").prop("disabled", true);
     });
+    
     $("#speed").change(function (e) {
        
         stopAnimation();
