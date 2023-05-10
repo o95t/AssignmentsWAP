@@ -1,0 +1,18 @@
+1. In jQuery terminology, what is the difference between the “jQuery function” and the “jQuery object”? 
+
+The jQuery function is essentially an alias for the global jQuery object.
+It is a function that is called to create a new jQuery object, and it takes one or more arguments that 
+specify the elements to be included in the new jQuery object.
+The jQuery function can also be used to perform operations on the selected elements,
+such as adding or removing classes, manipulating the element's content, or attaching event handlers.
+
+
+2. Write jQuery code to find all h1 elements that are children of a div element and make their background
+color red.
+
+$("div > h1").css("background-color", "red");
+
+
+3. Use a jQuery method to insert the text "YES!" at the end of the <p> element.
+
+$("p").append("YES!");
