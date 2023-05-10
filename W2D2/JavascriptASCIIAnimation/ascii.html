@@ -14,7 +14,7 @@
 <body>
     <h1>CSE 190 M ASCII Animation Viewer</h1>
 
-    <textarea id="animationBord" cols="200" rows="30"></textarea>
+    <textarea id="textField" name="textField" cols="80" rows="20"></textarea>
     <div class="controller">
         <fieldset>
             <legend>Play Controls:</legend>
@@ -29,18 +29,16 @@
                 <option value="juggler">JUGGLER</option>
                 <option value="bike">BIKE</option>
                 <option value="dive">DIVE</option>
-                <option value="blank">BLANK</option>
             </select>
         </fieldset>
         <fieldset>
             <legend>Size:</legend>
             <select id="size">
-                <option value="tiny">Tiny</option>
-                <option value="small">Small</option>
-                <option value="medium">Medium</option>
-                <option value="large">Large</option>
-                <option value="extraLarge">Extra Large</option>
-                <option value="xxl">XXL</option>
+                <option value="10pt">Tiny</option>
+                <option value="12pt" selected>MEDIUM</option>
+                <option value="16pt">Large</option>
+                <option value="24pt">Extra Large</option>
+                <option value="32pt">XXL</option>
             </select>
         </fieldset>
         <fieldset>
@@ -50,5 +48,6 @@
     </div>
 </body>
 <script src="ascii.js"></script>
+<script src="animation.js"></script>
 
 </html>
