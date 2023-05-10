@@ -40,11 +40,11 @@ function stopAnimation() {
 }
 
 function setText(x, i = 0) {
-    $("#textField").text(x[i % x.length]);
+    $("#animationBord").text(x[i % x.length]);
 }
 
 function animateSlow(x = 250) {
-    let frames = $("#textField").text();
+    let frames = $("#animationBord").text();
     frames = frames.split("=====\n");
     i = 0;
     intervalID = setInterval(() => {
@@ -54,12 +54,13 @@ function animateSlow(x = 250) {
 
 function setSize() {
     let fontSize = $("#size option:selected").val();
-    $("#textField").css("fontSize", fontSize);
+    console.log(fontSize)
+    $("#animationBord").css("fontSize", fontSize);
 }
 
+
 function setAnimationType() {
-    let textArea = $("#textField");
+    let textArea = $("#animationBord");
     let animationType = $('#animation option:selected').val();
-    console.log(ANIMATIONS["Bike"]);
-    //textArea.text(ANIMATIONS[animationType]);
+    textArea.text(ANIMATIONS[animationType]);
 }
