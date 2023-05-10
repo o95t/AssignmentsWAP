@@ -5,7 +5,6 @@ $(document).ready(function () {
         setAnimationType();
     });
     $("#start").click(function (e) {
-        e.preventDefault();
         $("#stop").prop("disabled", false);
         if ($("#speed").prop("checked")) {
             animateSlow(50);
@@ -17,12 +16,11 @@ $(document).ready(function () {
         setSize();
     });
     $("#stop").click(function (e) {
-        e.preventDefault();
         stopAnimation();
         $("#stop").prop("disabled", true);
     });
     $("#speed").change(function (e) {
-        e.preventDefault();
+       
         stopAnimation();
         $("#stop").prop("disabled", false);
         if ($(this).prop("checked")) {
@@ -54,7 +52,6 @@ function animateSlow(x = 250) {
 
 function setSize() {
     let fontSize = $("#size option:selected").val();
-    console.log(fontSize)
     $("#animationBord").css("fontSize", fontSize);
 }
 
