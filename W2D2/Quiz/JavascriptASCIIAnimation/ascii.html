@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>ASCII Animations</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='ascii.css'>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+    <h1>CSE 190 M ASCII Animation Viewer</h1>
+
+    <textarea id="animationBord" cols="200" rows="30"></textarea>
+    <div class="controller">
+        <fieldset>
+            <legend>Play Controls:</legend>
+            <button type="button" id="start" name="start">Start</button>
+            <button type="button" id="stop" name="stop">Stop</button>
+        </fieldset>
+        <fieldset>
+            <legend>Animation:</legend>
+            <select id="animation">
+                <option value="blank">BLANK</option>
+                <option value="exercise">EXERCISE</option>
+                <option value="juggler">JUGGLER</option>
+                <option value="bike">BIKE</option>
+                <option value="dive">DIVE</option>
+                <option value="blank">BLANK</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Size:</legend>
+            <select id="size">
+                <option value="tiny">Tiny</option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+                <option value="extraLarge">Extra Large</option>
+                <option value="xxl">XXL</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Speed:</legend>
+            <input type="checkbox" id="turbo" name="turbo" value="turbo">Turbo
+        </fieldset>
+    </div>
+</body>
+<script src="ascii.js"></script>
+
+</html>
