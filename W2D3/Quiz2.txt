@@ -1,0 +1,27 @@
+1. Which, if any, of the following 3 code fragments are equivalent? Explain why they are different, if
+they are. Explain why they can have different parameters and be equivalent, if they are equivalent. 
+
+
+All three code fragments are functionally equivalent, meaning they produce the same result, 
+which is to set the text color of all li elements to yellow.
+
+The difference between the code fragments is the number and type of arguments passed to the 
+callback function inside the each() method. 
+The first code fragment has two arguments, idx and e, 
+where idx is the index of the current element in the iteration and e is the DOM element itself. 
+The second code fragment doesn't have any arguments, 
+and the this keyword inside the callback function refers to the current DOM element. 
+The third code fragment has one argument, idx, which is the index of the current element.
+
+
+2. Write a jQuery expression to find all divs on a page that include an unordered list in them, and make
+their text color be blue.
+
+$("div:has(ul)").css("color", "blue");
+
+
+3. Write jQuery code to append the following div element (and all of its contents) dynamically to the body
+element.
+
+
+$("body").append("<div><h1>JQuery Core</h1></div>");
